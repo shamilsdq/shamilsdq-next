@@ -16,13 +16,13 @@ const Content: FunctionComponent = () => (
 const Social: FunctionComponent = () => (
     <ul>
         <li>
-            <a href="https://linkedin.com/in/shamilsdq">
+            <a href="https://linkedin.com/in/shamilsdq" target="_blank">
                 <Linkedin size="1.25rem" />
                 <span>LinkedIn</span>
             </a>
         </li>
         <li>
-            <a href="https://github.com/shamilsdq">
+            <a href="https://github.com/shamilsdq" target="_blank">
                 <GitHub size="1.25rem" />
                 <span>GitHub</span>
             </a>
