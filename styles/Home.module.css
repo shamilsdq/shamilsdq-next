@@ -1,21 +1,21 @@
 .introContainer {
     display: flex;
     width: 100%;
-    max-width: 55rem;
+    max-width: 50rem;
     margin: 0 auto;
-    gap: 3.25rem;
+    gap: 2.5rem;
 }
 
 .introImage {
     display: block;
     flex: none;
-    width: 9.5rem;
-    height: 9.5rem;
+    width: 10rem;
+    height: 10rem;
+    margin-top: 1rem;
     background-color: #4158D0;
     background-image: linear-gradient(47deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     border-radius: 10rem;
     overflow: hidden;
-    margin-top: 1rem
 }
 
 .introContentContainer {
@@ -26,13 +26,16 @@
 .introContentContainer > p {
     display: block;
     flex: 1;
-    font: 3rem serif;
-    line-height: 1.25;
+    font: 3rem Georgia, serif;
+    line-height: 1.35;
     padding: 0 0;
     margin-block-start: 0;
     margin-block-end: 0;
+    color: #888888;
+
 }
 
 .introContentContainer > p > span {
-    color: #FF5555;
+    color: #FFFFFF;
+    font-weight: normal;
 }
