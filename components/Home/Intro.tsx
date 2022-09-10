@@ -7,7 +7,7 @@ import styles from "styles/Home.module.css";
 
 const Content: FunctionComponent = () => (
     <p>
-        Hi, I'm <span>Shamil Siddique</span>, a full-stack developer from
+        Hi, I&apos;m <span>Shamil Siddique</span>, a full-stack developer from
         Kerala.
         <br />I love good code, good food and good people.
     </p>
