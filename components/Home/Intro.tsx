@@ -7,7 +7,7 @@ import styles from "styles/Home.module.css";
 
 const Content: FunctionComponent = () => (
     <p>
-        Hi, I'm <span>Shamil Siddique</span>, a full-stack developer from
+        Hi, I&apos;m <span>Shamil Siddique</span>, a full-stack developer from
         Kerala.
         <br />I love good code, good food and good people.
     </p>
@@ -16,13 +16,21 @@ const Content: FunctionComponent = () => (
 const Social: FunctionComponent = () => (
     <ul>
         <li>
-            <a href="https://linkedin.com/in/shamilsdq" target="_blank">
+            <a
+                href="https://linkedin.com/in/shamilsdq"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <Linkedin size="1.25rem" />
                 <span>LinkedIn</span>
             </a>
         </li>
         <li>
-            <a href="https://github.com/shamilsdq" target="_blank">
+            <a
+                href="https://github.com/shamilsdq"
+                target="_blank"
+                rel="noreferrer"
+            >
                 <GitHub size="1.25rem" />
                 <span>GitHub</span>
             </a>
@@ -33,7 +41,7 @@ const Social: FunctionComponent = () => (
 const Intro: FunctionComponent = () => (
     <section className={styles.introContainer}>
         <div className={styles.introImage}>
-            <Image src={dpImage} layout="responsive" />
+            <Image src={dpImage} layout="responsive" alt="Shamil Siddique" />
         </div>
 
         <div className={styles.introContentContainer}>
