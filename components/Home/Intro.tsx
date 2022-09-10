@@ -41,7 +41,7 @@ const Social: FunctionComponent = () => (
 const Intro: FunctionComponent = () => (
     <section className={styles.introContainer}>
         <div className={styles.introImage}>
-            <Image src={dpImage} layout="responsive" />
+            <Image src={dpImage} layout="responsive" alt="Shamil Siddique" />
         </div>
 
         <div className={styles.introContentContainer}>
