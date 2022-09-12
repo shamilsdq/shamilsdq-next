@@ -24,8 +24,8 @@ const Navigation: FunctionComponent = () => {
     return (
         <nav id="navigation">
             <ul>
-                {navigationItems.map(({ label, href, isActive }) => (
-                    <li className={isActive ? "active" : undefined}>
+                {navigationItems.map(({ label, href, isActive }, index) => (
+                    <li className={isActive ? "active" : undefined} key={index}>
                         <a href={href}>{label}</a>
                     </li>
                 ))}
