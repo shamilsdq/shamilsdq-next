@@ -15,3 +15,56 @@ a {
 * {
   box-sizing: border-box;
 }
+
+
+
+#body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 3.125rem;
+  padding: 1.25rem;
+}
+
+
+
+/* COMMON COMPONENTS */
+
+
+
+nav#navigation {
+  display: flex;
+  width: 100%;
+  max-width: 50rem;
+}
+
+nav#navigation > ul {
+  display: block;
+  flex: 1;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav#navigation > ul > li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav#navigation > ul > li > a {
+  display: block;
+  font: 1rem Verdana, sans-serif;
+  line-height: 1;
+  color: #999999;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+}
+
+nav#navigation > ul > li > a:hover {
+  background: #252525;
+}
+
+nav#navigation > ul > li.active > a {
+  font-weight: 600;
+  color: #DDDDDD;
+}
