@@ -7,12 +7,12 @@ const Resume: FunctionComponent = () => (
     <div className={styles.resume}>
         <Title />
         <div>
-            <main>
-                <Profile />
-            </main>
             <aside>
                 <Details />
             </aside>
+            <main>
+                <Profile />
+            </main>
         </div>
     </div>
 );
