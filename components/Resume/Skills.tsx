@@ -18,8 +18,8 @@ const Skills: FunctionComponent = () => (
     <section>
         <h4>Skills</h4>
         <ul>
-            {skillsList.map((skill) => (
-                <li>{skill}</li>
+            {skillsList.map((skill, index) => (
+                <li key={index}>{skill}</li>
             ))}
         </ul>
     </section>

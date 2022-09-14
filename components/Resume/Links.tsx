@@ -13,8 +13,8 @@ const Links: FunctionComponent = () => (
     <section>
         <h4>Links</h4>
         <ul>
-            {linksList.map(({ label, url }) => (
-                <li>
+            {linksList.map(({ label, url }, index) => (
+                <li key={index}>
                     <a href={url}>{label}</a>
                 </li>
             ))}
