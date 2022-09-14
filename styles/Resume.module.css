@@ -1,6 +1,7 @@
 .resume {
     display: flex;
     flex-direction: column;
+    gap: 1.25cm;
     width: 21cm;
     min-height: 29.7cm;
     background-color: #FFFFFF;
@@ -30,4 +31,60 @@
 .resume > header > h5 {
     font: 0.4cm Verdana, sans-serif;
     color: #777777;
+}
+
+
+
+.resume > div {
+    display: flex;
+}
+
+.resume > div > main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.resume > div > aside {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.resume main > section > h3 {
+    font: 0.6cm Verdana, sans-serif;
+    line-height: 1;
+    margin-block: 0;
+    margin-bottom: 0.5cm;
+    text-transform: uppercase;
+}
+
+.resume aside > section > h4 {
+    font: 0.5cm Verdana, sans-serif;
+    line-height: 1;
+    margin-block: 0;
+    text-transform: uppercase;
+}
+
+
+
+.profile > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25cm;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.profile > ul > li {
+    display: block;
+    font: 0.4cm Halvetica, sans-serif;
+    line-height: 1.35;
+}
+
+.profile > ul > li > span {
+    font-weight: 600;
 }

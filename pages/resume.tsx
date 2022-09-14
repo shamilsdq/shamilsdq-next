@@ -1,13 +1,15 @@
 import { FunctionComponent } from "react";
 import styles from "styles/Resume.module.css";
 
-import { Title } from "components/Resume";
+import { Title, Profile } from "components/Resume";
 
 const Resume: FunctionComponent = () => (
     <div className={styles.resume}>
         <Title />
         <div>
-            <main></main>
+            <main>
+                <Profile />
+            </main>
             <aside></aside>
         </div>
     </div>
