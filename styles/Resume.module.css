@@ -1,0 +1,33 @@
+.resume {
+    display: flex;
+    flex-direction: column;
+    width: 21cm;
+    min-height: 29.7cm;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 1.5cm 1.75cm;
+}
+
+
+
+.resume > header {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume > header > * {
+    display: block;
+    padding: 0;
+    line-height: 1;
+    margin-block: 0;
+}
+
+.resume > header > h2 {
+    font: 1.2cm Georgia, serif;
+    font-weight: 500;
+}
+
+.resume > header > h5 {
+    font: 0.4cm Verdana, sans-serif;
+    color: #777777;
+}
