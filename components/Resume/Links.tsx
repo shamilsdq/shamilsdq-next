@@ -1,7 +1,8 @@
 import { FunctionComponent } from "react";
+import styles from "styles/Resume.module.css";
 
 const Links: FunctionComponent = () => (
-    <section>
+    <section className={styles.links}>
         <h4>Links</h4>
         <ul>
             <li>

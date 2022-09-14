@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
 import styles from "styles/Resume.module.css";
 
-import { Title, Profile, Details } from "components/Resume";
+import { Title, Profile, Details, Links } from "components/Resume";
 
 const Resume: FunctionComponent = () => (
     <div className={styles.resume}>
@@ -9,6 +9,7 @@ const Resume: FunctionComponent = () => (
         <div>
             <aside>
                 <Details />
+                <Links />
             </aside>
             <main>
                 <Profile />

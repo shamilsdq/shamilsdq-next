@@ -50,6 +50,7 @@
     flex: none;
     display: flex;
     flex-direction: column;
+    gap: 1cm;
 }
 
 
@@ -96,7 +97,7 @@
 .details > ul {
     display: flex;
     flex-direction: column;
-    gap: 0.15cm;
+    gap: 0.2cm;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -106,4 +107,23 @@
     display: block;
     font: 0.375cm Halvetica, sans-serif;
     line-height: 1.25;
+}
+
+
+
+
+.links > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2cm;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.links > ul > li {
+    display: block;
+    font: 0.375cm Halvetica, sans-serif;
+    line-height: 1.25;
+    color: #0066ff;
 }
