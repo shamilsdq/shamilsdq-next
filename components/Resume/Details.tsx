@@ -1,8 +1,7 @@
 import { FunctionComponent } from "react";
-import styles from "styles/Resume.module.css";
 
 const Details: FunctionComponent = () => (
-    <section className={styles.details}>
+    <section>
         <h4>Details</h4>
         <ul>
             <li>Kochi, India</li>

@@ -55,15 +55,9 @@
 
 
 
-.resume main > section > h3 {
-    font: 0.6cm Verdana, sans-serif;
-    line-height: 1;
-    margin-block: 0;
-    margin-bottom: 0.5cm;
-    text-transform: uppercase;
-}
+/* sections in aside */
 
-.resume aside > section > h4 {
+.resume > div > aside > section > h4 {
     font: 0.5cm Verdana, sans-serif;
     line-height: 1;
     margin-block: 0;
@@ -71,7 +65,36 @@
     text-transform: uppercase;
 }
 
+.resume > div > aside > section > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2cm;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
+.resume > div > aside > section > ul > li {
+    display: block;
+    font: 0.375cm Halvetica, sans-serif;
+    line-height: 1.25;
+}
+
+.resume > div > aside > section > ul > li > a {
+    color: #0066ff;
+}
+
+
+
+/* sections in main */
+
+.resume > div > main > section > h3 {
+    font: 0.6cm Verdana, sans-serif;
+    line-height: 1;
+    margin-block: 0;
+    margin-bottom: 0.5cm;
+    text-transform: uppercase;
+}
 
 .profile > ul {
     display: flex;
@@ -90,57 +113,4 @@
 
 .profile > ul > li > span {
     font-weight: 600;
-}
-
-
-
-.details > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2cm;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.details > ul > li {
-    display: block;
-    font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.25;
-}
-
-
-
-
-.links > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2cm;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.links > ul > li {
-    display: block;
-    font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.25;
-    color: #0066ff;
-}
-
-
-
-.skills > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2cm;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.skills > ul > li {
-    display: block;
-    font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.25;
 }

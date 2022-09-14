@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import styles from "styles/Resume.module.css";
 
 type LinkType = { label: string; url: string };
 
@@ -11,7 +10,7 @@ const linksList: Array<LinkType> = [
 ];
 
 const Links: FunctionComponent = () => (
-    <section className={styles.links}>
+    <section>
         <h4>Links</h4>
         <ul>
             {linksList.map(({ label, url }) => (

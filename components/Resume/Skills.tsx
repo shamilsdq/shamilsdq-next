@@ -1,5 +1,4 @@
 import { FunctionComponent } from "react";
-import styles from "styles/Resume.module.css";
 
 const skillsList: Array<string> = [
     "React.js",
@@ -16,7 +15,7 @@ const skillsList: Array<string> = [
 ];
 
 const Skills: FunctionComponent = () => (
-    <section className={styles.skills}>
+    <section>
         <h4>Skills</h4>
         <ul>
             {skillsList.map((skill) => (
