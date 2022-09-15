@@ -44,6 +44,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 1cm;
 }
 
 .resume > div > aside {
@@ -96,6 +97,8 @@
     text-transform: uppercase;
 }
 
+
+
 .profile > ul {
     display: flex;
     flex-direction: column;
@@ -113,4 +116,49 @@
 
 .profile > ul > li > span {
     font-weight: 600;
+}
+
+
+
+.employmentHistory > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+
+
+.employmentHistory article {
+    display: flex;
+    flex-direction: column;
+}
+
+.employmentHistory article > h5 {
+    display: block;
+    font: 0.45cm Halvetica, sans-serif;
+    font-weight: 600;
+    margin-block: 0;
+}
+
+.employmentHistory article > span {
+    display: block;
+    font: 0.35cm Halvetica, sans-serif;
+    color: #777777;
+    margin: 0.075cm 0 0.25cm 0;
+}
+
+.employmentHistory article > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125cm;
+    padding: 0 0 0 0.375cm;
+    margin: 0;
+}
+
+.employmentHistory article > ul > li {
+    font: 0.375cm Halvetica, sans-serif;
+    line-height: 1.35;
+}
+
+.employmentHistory article > ul > li > a {
+    color: #0066ff;
 }
