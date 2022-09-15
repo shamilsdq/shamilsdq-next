@@ -5,5 +5,6 @@ import Links from "./Links";
 import Skills from "./Skills";
 
 import Profile from "./Profile";
+import EmploymentHistory from "./EmploymentHistory";
 
-export { Title, Details, Links, Skills, Profile };
+export { Title, Details, Links, Skills, Profile, EmploymentHistory };
