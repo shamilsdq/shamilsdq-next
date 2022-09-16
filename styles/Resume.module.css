@@ -111,7 +111,7 @@
 .profile > ul > li {
     display: block;
     font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 .profile > ul > li > span {
@@ -143,7 +143,7 @@
     display: block;
     font: 0.35cm Halvetica, sans-serif;
     color: #777777;
-    margin: 0.075cm 0 0.25cm 0;
+    margin: 0.15cm 0 0.275cm 0;
 }
 
 .employmentHistory article > ul {
@@ -156,7 +156,7 @@
 
 .employmentHistory article > ul > li {
     font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 .employmentHistory article > ul > li > a {
@@ -201,7 +201,7 @@
 
 .educationHistory article > ul > li {
     font: 0.375cm Halvetica, sans-serif;
-    line-height: 1.35;
+    line-height: 1.5;
 }
 
 
