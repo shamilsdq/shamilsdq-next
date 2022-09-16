@@ -18,7 +18,7 @@ const Resume: FunctionComponent = () => (
         <p className={styles.resumeInfo}>
             This page is optimized for printing the resume. You can use the{" "}
             <b>print option from your browser</b> to print or save this resume
-            as a PDF. Alternatively, you can{" "}
+            as a PDF (Limited browser support). Alternatively, you can{" "}
             <b>download this resume as a PDF</b> with this{" "}
             <a
                 href="/downloads/resume.pdf"
