@@ -162,3 +162,44 @@
 .employmentHistory article > ul > li > a {
     color: #0066ff;
 }
+
+
+
+.educationHistory > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+
+.educationHistory article {
+    display: flex;
+    flex-direction: column;
+}
+
+.educationHistory article > h5 {
+    display: block;
+    font: 0.45cm Halvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-block: 0;
+}
+
+.educationHistory article > span {
+    display: block;
+    font: 0.35cm Halvetica, sans-serif;
+    color: #777777;
+    margin: 0.15cm 0 0.275cm 0;
+}
+
+.educationHistory article > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125cm;
+    padding: 0 0 0 0.375cm;
+    margin: 0;
+}
+
+.educationHistory article > ul > li {
+    font: 0.375cm Halvetica, sans-serif;
+    line-height: 1.35;
+}

@@ -1,7 +1,8 @@
 import { FunctionComponent } from "react";
+import styles from "styles/Resume.module.css";
 
 const EducationHistory: FunctionComponent = () => (
-    <section>
+    <section className={styles.educationHistory}>
         <h3>Education History</h3>
         <div>
             <article>
