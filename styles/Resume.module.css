@@ -231,3 +231,44 @@
     color: #777777;
     margin: 0.15cm 0 0 0;
 }
+
+
+
+.projects > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+
+.projects article {
+    display: flex;
+    flex-direction: column;
+}
+
+.projects article > h5 {
+    display: block;
+    font: 0.45cm Halvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-block: 0;
+}
+
+.projects article > span {
+    display: block;
+    font: 0.35cm Halvetica, sans-serif;
+    color: #777777;
+    margin: 0.15cm 0 0.275cm 0;
+}
+
+.projects article > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.125cm;
+    padding: 0 0 0 0.375cm;
+    margin: 0;
+}
+
+.projects article > ul > li {
+    font: 0.375cm Halvetica, sans-serif;
+    line-height: 1.35;
+}

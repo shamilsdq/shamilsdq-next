@@ -1,11 +1,12 @@
 import { FunctionComponent } from "react";
+import styles from "styles/Resume.module.css";
 
 const Projects: FunctionComponent = () => (
-    <section>
+    <section className={styles.projects}>
         <h3>Projects</h3>
         <div>
             <article>
-                <h3>shamilsdq.dev</h3>
+                <h5>shamilsdq.dev</h5>
                 <span>September 2022 - Present</span>
                 <ul>
                     <li>Personal portfolio site</li>
@@ -13,7 +14,7 @@ const Projects: FunctionComponent = () => (
                 </ul>
             </article>
             <article>
-                <h3>peer-chat</h3>
+                <h5>peer-chat</h5>
                 <span>June 2021</span>
                 <ul>
                     <li>Peer to Peer chat application for desktop users</li>
@@ -21,7 +22,7 @@ const Projects: FunctionComponent = () => (
                 </ul>
             </article>
             <article>
-                <h3>instabot</h3>
+                <h5>instabot</h5>
                 <span>August 2020</span>
                 <ul>
                     <li>
@@ -32,7 +33,7 @@ const Projects: FunctionComponent = () => (
                 </ul>
             </article>
             <article>
-                <h3>attendance-tracker</h3>
+                <h5>attendance-tracker</h5>
                 <span>September 2019</span>
                 <ul>
                     <li>Offline attendance tracking app for mobile users</li>
