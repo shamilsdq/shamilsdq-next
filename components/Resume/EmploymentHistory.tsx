@@ -24,7 +24,11 @@ const EmploymentHistory: FunctionComponent = () => (
                     </li>
                     <li>
                         Worked on migrating{" "}
-                        <a href="https://neeto.com" target="_blank">
+                        <a
+                            href="https://neeto.com"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
                             neeto.com
                         </a>{" "}
                         code base to Next.js and improving code quality.
