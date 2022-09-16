@@ -1,3 +1,31 @@
+.resumeInfo {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    font: 1.3rem Halvetica, sans-serif;
+    font-weight: 300;
+    color: #999999;
+    line-height: 1.85;
+}
+
+.resumeInfo b {
+    color: #AAAAAA;
+    font-weight: 600;
+}
+
+.resumeInfo a {
+    color: #0099ff
+}
+
+
+
+.resumeContainer {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    overflow-x: scroll;
+}
+
 .resume {
     display: flex;
     flex-direction: column;
@@ -280,6 +308,10 @@
 
 
 @media print {
+    .resumeInfo {
+        display: none !important;
+    }
+
     .resume {
         padding: 0.75cm 1.75cm;
     }
