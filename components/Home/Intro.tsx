@@ -2,7 +2,7 @@ import { FunctionComponent } from "react";
 import Image from "next/image";
 
 import { GitHub, Linkedin } from "react-feather";
-import dpImage from "assets/images/onam-1-cropped.png";
+import dpImage from "public/images/shamilsdq.png";
 import styles from "styles/Home.module.css";
 
 const Content: FunctionComponent = () => (

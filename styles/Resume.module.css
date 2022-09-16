@@ -1,3 +1,31 @@
+.resumeInfo {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    font: 1.3rem Halvetica, sans-serif;
+    font-weight: 300;
+    color: #999999;
+    line-height: 1.85;
+}
+
+.resumeInfo b {
+    color: #AAAAAA;
+    font-weight: 600;
+}
+
+.resumeInfo a {
+    color: #0099ff
+}
+
+
+
+.resumeContainer {
+    display: block;
+    width: 100%;
+    max-width: 50rem;
+    overflow-x: scroll;
+}
+
 .resume {
     display: flex;
     flex-direction: column;
@@ -271,4 +299,32 @@
 .projects article > ul > li {
     font: 0.375cm Halvetica, sans-serif;
     line-height: 1.35;
+}
+
+
+
+/* PRINT SPECIFIC RULES - VOLATILE */
+
+
+
+@media print {
+    .resumeInfo {
+        display: none !important;
+    }
+
+    .resume {
+        padding: 0.75cm 1.75cm;
+    }
+
+    .resume div main {
+        gap: 0.75cm !important;
+    }
+
+    .profile > ul {
+        gap: 0.15cm !important;
+    }
+    
+    .educationHistory {
+        margin-top: 2cm !important;
+    }
 }
