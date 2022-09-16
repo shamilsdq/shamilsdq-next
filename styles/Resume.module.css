@@ -203,3 +203,31 @@
     font: 0.375cm Halvetica, sans-serif;
     line-height: 1.35;
 }
+
+
+
+.courses > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5cm;
+}
+
+.courses article {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses article > h5 {
+    display: block;
+    font: 0.45cm Halvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.35;
+    margin-block: 0;
+}
+
+.courses article > span {
+    display: block;
+    font: 0.35cm Halvetica, sans-serif;
+    color: #777777;
+    margin: 0.15cm 0 0.275cm 0;
+}
