@@ -7,6 +7,7 @@ import Skills from "./Skills";
 import Profile from "./Profile";
 import EmploymentHistory from "./EmploymentHistory";
 import EducationHistory from "./EducationHistory";
+import Courses from "./Courses";
 
 export {
     Title,
@@ -16,4 +17,5 @@ export {
     Profile,
     EmploymentHistory,
     EducationHistory,
+    Courses,
 };

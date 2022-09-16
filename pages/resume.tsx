@@ -9,6 +9,7 @@ import {
     Skills,
     EmploymentHistory,
     EducationHistory,
+    Courses,
 } from "components/Resume";
 
 const Resume: FunctionComponent = () => (
@@ -24,6 +25,7 @@ const Resume: FunctionComponent = () => (
                 <Profile />
                 <EmploymentHistory />
                 <EducationHistory />
+                <Courses />
             </main>
         </div>
     </div>
