@@ -68,3 +68,15 @@ nav#navigation > ul > li.active > a {
   font-weight: 600;
   color: #DDDDDD;
 }
+
+
+
+@media print {
+  @page { margin: 0; }
+  @page :header { display: none }
+  @page :footer { display: none }
+
+  nav#navigation {
+    display: none !important;
+  }
+}
