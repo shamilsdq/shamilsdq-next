@@ -1,5 +1,4 @@
-html,
-body {
+html, body {
   padding: 0;
   margin: 0;
   background: #121212;
@@ -12,9 +11,7 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box }
 
 
 
@@ -22,6 +19,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  min-height: 100vh;
   align-items: center;
   gap: 3.125rem;
   padding: 1.25rem;
@@ -34,6 +32,7 @@ a {
 
 
 nav#navigation {
+  flex: none;
   display: flex;
   width: 100%;
   max-width: 50rem;
@@ -60,9 +59,7 @@ nav#navigation > ul > li > a {
   border-radius: 0.5rem;
 }
 
-nav#navigation > ul > li > a:hover {
-  background: #252525;
-}
+nav#navigation > ul > li > a:hover { background: #252525 }
 
 nav#navigation > ul > li.active > a {
   font-weight: 600;
@@ -71,12 +68,36 @@ nav#navigation > ul > li.active > a {
 
 
 
+#container { flex: 1 }
+
+
+
+#footer {
+  display: block;
+  flex: none;
+  width: 100%;
+  max-width: 50rem;
+  padding: 0 0.75rem;
+  margin: 1.5rem 0;
+}
+
+#footer > span { 
+  display: block;
+  font: 1rem Halvetica, sans-serif;
+  font-weight: 200;
+  color: #777777;
+}
+
+
+
+/* Styling for Print */
+
+
+
 @media print {
   @page { margin: 0; }
   @page :header { display: none }
   @page :footer { display: none }
 
-  nav#navigation {
-    display: none !important;
-  }
+  nav#navigation { display: none !important }
 }
