@@ -8,6 +8,7 @@ import Profile from "./Profile";
 import EmploymentHistory from "./EmploymentHistory";
 import EducationHistory from "./EducationHistory";
 import Courses from "./Courses";
+import Projects from "./Projects";
 
 export {
     Title,
@@ -18,4 +19,5 @@ export {
     EmploymentHistory,
     EducationHistory,
     Courses,
+    Projects,
 };
