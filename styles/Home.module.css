@@ -61,7 +61,14 @@
     border-radius: 1.5rem;
     border: 1px solid #CCCCCC;
     color: #CCCCCC;
+    transition: 0.3s;
 }
+
+.introContentContainer > ul > li > a:hover, .introContentContainer > ul > li > a:focus {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
 
 
 @media only screen and (min-width: 520px) {
