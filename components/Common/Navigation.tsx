@@ -1,5 +1,6 @@
 import { FunctionComponent, useMemo } from "react";
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 type NavigationItemType = {
     label: string;
@@ -26,7 +27,9 @@ const Navigation: FunctionComponent = () => {
             <ul>
                 {navigationItems.map(({ label, href, isActive }, index) => (
                     <li className={isActive ? "active" : undefined} key={index}>
-                        <a href={href}>{label}</a>
+                        <Link href={href}>
+                            <a>{label}</a>
+                        </Link>
                     </li>
                 ))}
             </ul>
