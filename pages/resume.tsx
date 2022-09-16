@@ -8,6 +8,7 @@ import {
     Links,
     Skills,
     EmploymentHistory,
+    EducationHistory,
 } from "components/Resume";
 
 const Resume: FunctionComponent = () => (
@@ -22,6 +23,7 @@ const Resume: FunctionComponent = () => (
             <main>
                 <Profile />
                 <EmploymentHistory />
+                <EducationHistory />
             </main>
         </div>
     </div>
