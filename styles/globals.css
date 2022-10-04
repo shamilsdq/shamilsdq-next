@@ -100,4 +100,6 @@ nav#navigation > ul > li.active > a {
   @page :footer { display: none }
 
   nav#navigation { display: none !important }
+
+  #footer { display: none }
 }
