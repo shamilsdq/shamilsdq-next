@@ -79,20 +79,28 @@ nav#navigation > ul > li.active > a {
 
 
 #footer {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   flex: none;
   width: 100%;
   max-width: 50rem;
   padding: 0 0.75rem;
   margin: 1.5rem 0;
+  font: 1rem Halvetica, sans-serif;
+  font-weight: 200;
 }
 
 #footer > span { 
   display: block;
-  font: 1rem Halvetica, sans-serif;
-  font-weight: 200;
   color: #777777;
 }
+
+#footer > a {
+  display: block;
+  color: #BBBBBB;
+}
+
+#footer > a:hover, #footer > a:focus { color: #FFFFFF }
 
 
 
