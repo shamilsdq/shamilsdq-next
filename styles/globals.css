@@ -84,7 +84,7 @@ nav#navigation > ul > li.active > a {
   flex: none;
   width: 100%;
   max-width: 50rem;
-  padding: 0 0.75rem;
+  padding: 0;
   margin: 1.5rem 0;
   font: 1rem Halvetica, sans-serif;
   font-weight: 200;

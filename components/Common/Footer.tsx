@@ -8,7 +8,7 @@ const Footer: FC = () => (
       target="_blank"
       rel="noreferrer"
     >
-      Github Repo
+      View source
     </a>
   </footer>
 );
