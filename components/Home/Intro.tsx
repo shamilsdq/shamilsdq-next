@@ -15,7 +15,7 @@ const Intro: FC = () => (
       <p>
         Hi, I&apos;m <span>Shamil Siddique</span>, a full-stack developer from
         Kerala.
-        <br />I love good code, good food and good people.
+        <br />I love working with good code, good food and good people.
       </p>
       <ul>
         {SOCIAL_LINKS.map(({ label, url, icon: IconComponent }) => (

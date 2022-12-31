@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
+
 html, body {
   padding: 0;
   margin: 0;
   background: #121212;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
@@ -24,10 +25,6 @@ a {
   gap: 3.125rem;
   padding: 1.25rem;
 }
-
-
-
-/* COMMON COMPONENTS */
 
 
 
@@ -52,7 +49,7 @@ nav#navigation > ul > li {
 
 nav#navigation > ul > li > a {
   display: block;
-  font: 1rem Verdana, sans-serif;
+  font-size: 1.2rem;
   line-height: 1;
   color: #999999;
   padding: 0.5rem 0.75rem;
@@ -62,7 +59,7 @@ nav#navigation > ul > li > a {
 nav#navigation > ul > li > a:hover { background: #252525 }
 
 nav#navigation > ul > li.active > a {
-  font-weight: 600;
+  font-weight: 500;
   color: #DDDDDD;
 }
 
@@ -86,7 +83,6 @@ nav#navigation > ul > li.active > a {
   max-width: 50rem;
   padding: 0;
   margin: 1.5rem 0;
-  font: 1rem Halvetica, sans-serif;
   font-weight: 200;
 }
 
@@ -100,20 +96,6 @@ nav#navigation > ul > li.active > a {
   color: #BBBBBB;
 }
 
-#footer > a:hover, #footer > a:focus { color: #FFFFFF }
-
-
-
-/* Styling for Print */
-
-
-
-@media print {
-  @page { margin: 0; }
-  @page :header { display: none }
-  @page :footer { display: none }
-
-  nav#navigation { display: none !important }
-
-  #footer { display: none }
+#footer > a:hover, #footer > a:focus { 
+  color: #FFFFFF 
 }
