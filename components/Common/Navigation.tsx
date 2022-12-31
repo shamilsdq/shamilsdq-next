@@ -11,7 +11,6 @@ type NavigationItemType = {
 const getNavigationItems = (path: string): Array<NavigationItemType> => [
     { label: "Home", href: "/", isActive: path === "" },
     { label: "Posts", href: "/posts", isActive: path === "posts" },
-    { label: "Resume", href: "/resume", isActive: path === "resume" },
 ];
 
 const Navigation: FunctionComponent = () => {
