@@ -1,6 +1,6 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 
-const Footer: FunctionComponent = () => (
+const Footer: FC = () => (
     <footer id="footer">
         <span>Shamil Siddique &copy; 2022</span>
         <a

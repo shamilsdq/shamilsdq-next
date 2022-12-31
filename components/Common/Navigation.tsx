@@ -1,32 +1,24 @@
-import { FunctionComponent, useMemo } from "react";
+import { FC } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-type NavigationItemType = {
-    label: string;
-    href: string;
-    isActive: boolean;
-};
+import { NAVIGATION_ITEMS } from "./constants";
 
-const getNavigationItems = (path: string): Array<NavigationItemType> => [
-    { label: "Home", href: "/", isActive: path === "" },
-    { label: "Posts", href: "/posts", isActive: path === "posts" },
-];
-
-const Navigation: FunctionComponent = () => {
+const Navigation: FC = () => {
     const { pathname } = useRouter();
 
-    const navigationItems: Array<NavigationItemType> = useMemo(
-        () => getNavigationItems(pathname?.split("/")?.[1] ?? "_error"),
-        [pathname]
-    );
+    const isActive = (route: string): boolean =>
+        pathname?.split("/")?.[1] === route.slice(1);
 
     return (
         <nav id="navigation">
             <ul>
-                {navigationItems.map(({ label, href, isActive }, index) => (
-                    <li className={isActive ? "active" : undefined} key={index}>
-                        <Link href={href}>
+                {NAVIGATION_ITEMS.map(({ label, route }) => (
+                    <li
+                        key={label}
+                        className={isActive(route) ? "active" : undefined}
+                    >
+                        <Link href={route}>
                             <a>{label}</a>
                         </Link>
                     </li>
