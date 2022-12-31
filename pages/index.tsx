@@ -1,10 +1,11 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
+
 import { Intro } from "components/Home";
 
-const Home: FunctionComponent = () => (
-    <div>
-        <Intro />
-    </div>
+const Home: FC = () => (
+  <div>
+    <Intro />
+  </div>
 );
 
 export default Home;
