@@ -1,11 +1,12 @@
-import { FunctionComponent } from "react";
+import { FC } from "react";
 import Image from "next/image";
 
-import { GitHub, Linkedin } from "react-feather";
 import dpImage from "public/images/shamilsdq.png";
 import styles from "styles/Home.module.css";
 
-const Content: FunctionComponent = () => (
+import { SOCIAL_LINKS } from "./constants";
+
+const Content: FC = () => (
     <p>
         Hi, I&apos;m <span>Shamil Siddique</span>, a full-stack developer from
         Kerala.
@@ -13,37 +14,24 @@ const Content: FunctionComponent = () => (
     </p>
 );
 
-const Social: FunctionComponent = () => (
+const Social: FC = () => (
     <ul>
-        <li>
-            <a
-                href="https://linkedin.com/in/shamilsdq"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <Linkedin size="1.25rem" />
-                <span>LinkedIn</span>
-            </a>
-        </li>
-        <li>
-            <a
-                href="https://github.com/shamilsdq"
-                target="_blank"
-                rel="noreferrer"
-            >
-                <GitHub size="1.25rem" />
-                <span>GitHub</span>
-            </a>
-        </li>
+        {SOCIAL_LINKS.map(({ label, url, icon: IconComponent }) => (
+            <li key={label}>
+                <a href={url} target="_blank" rel="noreferrer">
+                    <IconComponent size="1.25rem" />
+                    <span>{label}</span>
+                </a>
+            </li>
+        ))}
     </ul>
 );
 
-const Intro: FunctionComponent = () => (
+const Intro: FC = () => (
     <section className={styles.introContainer}>
         <div className={styles.introImage}>
             <Image src={dpImage} layout="responsive" alt="Shamil Siddique" />
         </div>
-
         <div className={styles.introContentContainer}>
             <Content />
             <Social />
