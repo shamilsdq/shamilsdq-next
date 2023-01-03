@@ -6,11 +6,11 @@ import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <div id="body">
+    <div className="flex flex-col items-center w-full max-w-4xl min-h-screen gap-16 px-5 py-10 mx-auto">
       <Navigation />
-      <div id="container">
+      <section className="flex flex-col items-center flex-auto w-full">
         <Component {...pageProps} />
-      </div>
+      </section>
       <Footer />
     </div>
   );
