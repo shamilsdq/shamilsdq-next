@@ -1,119 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto+Slab:wght@200;300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* { 
+  box-sizing: border-box;
+  transition-duration: 0.3s;  
+}
+
 html, body {
   padding: 0;
   margin: 0;
   background: #121212;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-* { box-sizing: border-box }
-
-
-
-#body {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  min-height: 100vh;
-  align-items: center;
-  gap: 3.125rem;
-  padding: 1.25rem;
-}
-
-
-
-/* COMMON COMPONENTS */
-
-
-
-nav#navigation {
-  flex: none;
-  display: flex;
-  width: 100%;
-  max-width: 50rem;
-}
-
-nav#navigation > ul {
-  display: block;
-  flex: 1;
-  list-style-type: none;
-  padding: 0;
-}
-
-nav#navigation > ul > li {
-  display: inline-block;
-  margin-right: 1rem;
-}
-
-nav#navigation > ul > li > a {
-  display: block;
-  font: 1rem Verdana, sans-serif;
-  line-height: 1;
-  color: #999999;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.5rem;
-}
-
-nav#navigation > ul > li > a:hover { background: #252525 }
-
-nav#navigation > ul > li.active > a {
-  font-weight: 600;
-  color: #DDDDDD;
-}
-
-
-
-#container { 
-  flex: 1; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-
-
-#footer {
-  display: flex;
-  justify-content: space-between;
-  flex: none;
-  width: 100%;
-  max-width: 50rem;
-  padding: 0 0.75rem;
-  margin: 1.5rem 0;
-  font: 1rem Halvetica, sans-serif;
-  font-weight: 200;
-}
-
-#footer > span { 
-  display: block;
-  color: #777777;
-}
-
-#footer > a {
-  display: block;
-  color: #BBBBBB;
-}
-
-#footer > a:hover, #footer > a:focus { color: #FFFFFF }
-
-
-
-/* Styling for Print */
-
-
-
-@media print {
-  @page { margin: 0; }
-  @page :header { display: none }
-  @page :footer { display: none }
-
-  nav#navigation { display: none !important }
-
-  #footer { display: none }
 }

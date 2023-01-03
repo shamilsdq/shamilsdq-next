@@ -1,40 +1,38 @@
-import { FunctionComponent, useMemo } from "react";
+import { FC } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-type NavigationItemType = {
-    label: string;
-    href: string;
-    isActive: boolean;
-};
+import classnames from "classnames";
 
-const getNavigationItems = (path: string): Array<NavigationItemType> => [
-    { label: "Home", href: "/", isActive: path === "" },
-    { label: "Posts", href: "/posts", isActive: path === "posts" },
-    { label: "Resume", href: "/resume", isActive: path === "resume" },
-];
+import { NAVIGATION_ITEMS } from "./constants";
 
-const Navigation: FunctionComponent = () => {
-    const { pathname } = useRouter();
+const Navigation: FC = () => {
+  const { pathname } = useRouter();
 
-    const navigationItems: Array<NavigationItemType> = useMemo(
-        () => getNavigationItems(pathname?.split("/")?.[1] ?? "_error"),
-        [pathname]
-    );
+  const isActive = (route: string): boolean =>
+    pathname?.split("/")?.[1] === route.slice(1);
 
-    return (
-        <nav id="navigation">
-            <ul>
-                {navigationItems.map(({ label, href, isActive }, index) => (
-                    <li className={isActive ? "active" : undefined} key={index}>
-                        <Link href={href}>
-                            <a>{label}</a>
-                        </Link>
-                    </li>
-                ))}
-            </ul>
-        </nav>
-    );
+  return (
+    <nav className="flex-none w-full">
+      <ul className="block space-x-4 list-none">
+        {NAVIGATION_ITEMS.map(({ label, route }) => (
+          <li
+            key={label}
+            className={classnames("inline-block font-medium text-lg", {
+              "text-neutral-500": !isActive(route),
+              "text-neutral-300": isActive(route),
+            })}
+          >
+            <Link href={route}>
+              <a className="block px-3 py-2 leading-none rounded-lg hover:bg-neutral-800">
+                {label}
+              </a>
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
 };
 
 export default Navigation;
